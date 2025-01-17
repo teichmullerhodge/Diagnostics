@@ -67,8 +67,6 @@ var questionIndex = 0;
  * @returns {void}
  * Change the question to the next question
  */
-
-
 function change_question() {
 
     questionIndex++;
