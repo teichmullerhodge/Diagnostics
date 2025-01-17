@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Interativo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
 </head>
 <body>
 
     <div id="chat-container">
-        <div class="chat-container">
+        <div class="chat-contents">
             <div class="chat-messages" id="chat-messages">
-                <div class="chat-message bot">
+                <div class="chat-messages-list">
                     <div class="message-content">
-                        <p>Olá! Eu sou o Chatbot Interativo. Como posso te ajudar?</p>
+                        <img src="bot.png" alt="Bot" class="bot-image">
+                        <p class="bot-question">Olá! Eu sou o Chatbot Interativo. Vamos começar seu diagnóstico?</p>
                     </div>
+                    <div class="message-content user">
+                        <button class="btn-option success" onclick="start_diagnostic()">Claro, vamos lá!</button>
+                        <button class="btn-option danger" onclick="reject_diagnostic()">Prefiro ficar do jeito que está!</button>                        
+                    </div>                    
                 </div>                        
             </div>
-        </div>
-        <div class="chat-form">
-            <input type="text" id="chat-form-text" placeholder="Digite sua mensagem...">
-            <button id="chat-form-button">Enviar</button>
+            <div class="chat-form">
+                <input type="text" id="chat-form-entry" placeholder="Digite sua mensagem...">
+                <button id="chat-form-button">Enviar</button>
+            </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>

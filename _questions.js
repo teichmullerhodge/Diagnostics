@@ -1,4 +1,6 @@
-const Questions = {
+export const Sectors = ["PreSales", "Sales", "SalesManagement", "FinancesManagement"];
+
+export const Questions = {
     "PreSales": [
         {
             "Question": "Você utiliza técnicas de prospecção ativa?",
