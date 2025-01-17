@@ -3,53 +3,53 @@ export const Sectors = ["PreSales", "Sales", "SalesManagement", "FinancesManagem
 export const Questions = {
     "PreSales": [
         {
-            "Question": "Você utiliza técnicas de prospecção ativa?",
+            "Question": "Como você realiza a prospecção de novos clientes?",
             "Answers": [
-                {"Option": "A", "Text": "Não", "Weight": 0},
-                {"Option": "B", "Text": "Sim, uso esporadicamente", "Weight": 5},
-                {"Option": "C", "Text": "Sim, utilizo em parte do meu processo de vendas", "Weight": 10},
-                {"Option": "D", "Text": "Sim, sou totalmente focado em prospecção ativa", "Weight": 15},
-                {"Option": "E", "Text": "Sim, utilizo prospecção ativa combinado com ferramentas para segmentação", "Weight": 20}
+                {"Option": "A", "Text": "Realizo 100% de maneira inbound, com campanhas de marketing e tráfego pago", "Weight": 5},
+                {"Option": "B", "Text": "Realizo 100% de maneira outbound, com estratégias de prospecção offline", "Weight": 5},
+                {"Option": "C", "Text": "Realizo de forma híbrida com maior foco em inbound", "Weight": 15},
+                {"Option": "D", "Text": "Realizo de forma híbrida com maior foco em outbound", "Weight": 10},
+                {"Option": "E", "Text": "Realizo de forma híbrida com proporções equivalentes de inbound e outbound", "Weight": 20}
             ]
         },
         {
-            "Question": "A equipe de pré-vendas realiza follow-up sistemático com leads?",
+            "Question": "Como funciona o seu processo de atendimento dos leads?",
             "Answers": [
-                {"Option": "A", "Text": "Não", "Weight": 0},
-                {"Option": "B", "Text": "Sim, ocasionalmente", "Weight": 5},
-                {"Option": "C", "Text": "Sim, fazemos follow-up mas não sistematicamente", "Weight": 10},
-                {"Option": "D", "Text": "Sim, realizamos follow-up regularmente", "Weight": 15},
-                {"Option": "E", "Text": "Sim, utilizamos ferramentas especializadas e o follow-up é automatizado", "Weight": 20}
+                {"Option": "A", "Text": "Ruim, falta script, fluxo de cadência, automação.", "Weight": 0},
+                {"Option": "B", "Text": "Razoável, tenho script, porém falta fluxo de cadência e automação", "Weight": 5},
+                {"Option": "C", "Text": "Bom, tenho script, fluxos de cadências, porém não tenho automações", "Weight": 10},
+                {"Option": "D", "Text": "Ótimo, tenho script, fluxos de cadências e automações", "Weight": 15},
+                {"Option": "E", "Text": "Excelente, tenho script, fluxos de cadências, automações e políticas comerciais", "Weight": 20}
             ]
         },
         {
-            "Question": "Você utiliza campanhas de marketing para geração de leads?",
+            "Question": "Como você realiza as campanhas de marketing para geração de leads?",
             "Answers": [
-                {"Option": "A", "Text": "Não", "Weight": 0},
-                {"Option": "B", "Text": "Sim, campanhas esporádicas", "Weight": 5},
-                {"Option": "C", "Text": "Sim, campanhas pontuais, como em eventos", "Weight": 10},
-                {"Option": "D", "Text": "Sim, utilizamos campanhas regulares de marketing", "Weight": 15},
-                {"Option": "E", "Text": "Sim, campanhas personalizadas e integradas, com alta segmentação", "Weight": 20}
+                {"Option": "A", "Text": "Não realizo campanhas inbound", "Weight": 0},
+                {"Option": "B", "Text": "Realizo de forma esporádica", "Weight": 5},
+                {"Option": "C", "Text": "Realizo campanhas pontuais como eventos e campanhas comerciais", "Weight": 10},
+                {"Option": "D", "Text": "Realizo campanhas contínuas de tráfego pago, porém com baixo controle", "Weight": 15},
+                {"Option": "E", "Text": "Realizo campanhas contínuas com alta segmentação e controle de dados", "Weight": 20}
             ]
         },
         {
-            "Question": "A equipe de pré-vendas faz qualificação inicial dos leads?",
+            "Question": "Como funciona a sua equipe de pré-vendas?",
             "Answers": [
-                {"Option": "A", "Text": "Não", "Weight": 0},
-                {"Option": "B", "Text": "Sim, mas de maneira pouco estruturada", "Weight": 5},
-                {"Option": "C", "Text": "Sim, com ferramentas básicas de qualificação", "Weight": 10},
-                {"Option": "D", "Text": "Sim, utilizando um processo estruturado", "Weight": 15},
-                {"Option": "E", "Text": "Sim, utilizando CRM para triagem", "Weight": 20}
+                {"Option": "A", "Text": "Não tenho equipe de pré-vendas, atendimento apenas outbound", "Weight": 0},
+                {"Option": "B", "Text": "Não tenho equipe de pré-vendas, os leads inbound vão para vendedores externos", "Weight": 5},
+                {"Option": "C", "Text": "Não tenho equipe de pré-vendas, os leads inbound vão para vendedores internos", "Weight": 10},
+                {"Option": "D", "Text": "Tenho equipe de pré-vendas, porém sem controle de performance", "Weight": 15},
+                {"Option": "E", "Text": "Tenho equipe de pré-vendas, com controle de performance", "Weight": 20}
             ]
         },
         {
-            "Question": "Você possui um sistema de pontuação de leads (Lead Score)?",
+            "Question": "Selecione abaixo os canais que você utiliza para geração de demanda?",
             "Answers": [
-                {"Option": "A", "Text": "Não", "Weight": 0},
-                {"Option": "B", "Text": "Estamos no processo de implementação", "Weight": 5},
-                {"Option": "C", "Text": "Sim, utilizamos um sistema básico", "Weight": 10},
-                {"Option": "D", "Text": "Sim, utilizamos um sistema funcional e organizado", "Weight": 15},
-                {"Option": "E", "Text": "Sim, utilizamos um sistema avançado e automatizado de Lead Score", "Weight": 20}
+                {"Option": "A", "Text": "Prospecção ativa do vendedor e networking", "Weight": 0},
+                {"Option": "B", "Text": "Participação e patrocínios em feiras e eventos", "Weight": 5},
+                {"Option": "C", "Text": "Programa de bonificação e indicação de novos clientes", "Weight": 10},
+                {"Option": "D", "Text": "Tráfego pago", "Weight": 15},
+                {"Option": "E", "Text": "Estratégias avançadas de marketing digital e influenciadores", "Weight": 20}
             ]
         }
     ],

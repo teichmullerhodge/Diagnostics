@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
+.chat-contents::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .chat-contents::-webkit-scrollbar-track {
+    background-color: #fbfbfb;
+  }
+  
+  .chat-contents::-webkit-scrollbar-thumb {
+    background-color: rgb(239, 239, 244);    /* color of the scroll thumb */
+  }
+
+
+ 
+/* Animation for the gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 :root {
 
     --dream-green: #4ad295;
@@ -8,7 +36,9 @@
     --dream-yellow: #e2e24a;
     --dream-orange: #e2a24a;
     --dream-purple: #a24ae2;
+    --dream-white: #f9f9f9;
     --text-color: #333;
+
 }
 
 * {
@@ -20,19 +50,22 @@
 }
 
 #chat-container {
-
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(120deg, var(--dream-green), var(--dream-purple), var(--dream-green));
+    background-size: 400% 400%; /* Makes the gradient large enough to animate */
+    animation: gradientAnimation 10s ease infinite; /* Animates the gradient */
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+
 }
 
 
 
-.message-content {
-
+.message-content, .user-messages  {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -44,15 +77,16 @@
     background-color: rgb(243, 240, 240);
 }
 
-.message-content.user {
+.user-messages {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     justify-self: end;
     width: 30%;
     box-shadow: none;
+    background-color: var(--dream-white);
+
 }
 
 
@@ -60,18 +94,24 @@
 
     padding: 8px;
     border-radius: 6px;
-    border: 2px solid #ccc;
+    border: 3px solid #ccc;
     outline: none;
     transition: 0.3s;
     cursor: pointer;
     font-weight: 600;
+    width: 300px;
+    opacity: 0.6;
 
 }
 
 .btn-option:hover {
 
     background-color: rgb(248, 246, 246);
-    color: var(--text-color);
+    border: 3px solid var(--dream-green);
+    background-color: #1b965f;
+    color: var(--dream-white);
+    opacity: 1;
+
 
 }
 
@@ -80,6 +120,7 @@
     background-color: var(--dream-green);
     color: white;
     border: 2px solid var(--dream-green);
+    opacity: 1;
 }
 
 .danger {
@@ -87,6 +128,7 @@
     background-color: var(--dream-red);
     color: white;
     border: 2px solid var(--dream-red);
+    opacity: 1;
 }
 
 
@@ -98,7 +140,15 @@
     display: flex;
     flex-direction: column;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: var(--dream-white);
+}
 
+.spacing {
+
+    width: 100%;
+    height: 2vh;
 }
 
 .chat-messages {
@@ -156,4 +206,30 @@
     background-color: rgb(248, 246, 246);
     color: var(--text-color);
 
+}
+
+#btn-result {
+
+    width: 600px;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 3px solid var(--dream-green);
+    background-color: var(--dream-green);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-result:hover {
+
+    background-color: rgb(248, 246, 246);
+    border: 3px solid var(--dream-green);
+    color: var(--dream-green);
+}
+
+#swal2-html-container {
+
+    overflow: hidden;
 }
