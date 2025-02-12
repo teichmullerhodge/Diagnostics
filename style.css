@@ -83,6 +83,7 @@
     flex-direction: column;
     align-items: center;
     justify-self: end;
+    margin-left: 70%;
     width: 30%;
     box-shadow: none;
     background-color: var(--dream-white);
@@ -145,11 +146,19 @@
     background-color: var(--dream-white);
 }
 
+
+
 .spacing {
 
     width: 100%;
     height: 2vh;
 }
+
+.chat-messages-list {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .chat-messages {
 
@@ -233,3 +242,5 @@
 
     overflow: hidden;
 }
+
+
